@@ -1,7 +1,5 @@
 package hello;
 
-import java.util.UUID;
-
 /**
  * Created by Black on 28/04/2016.
  */
@@ -14,9 +12,9 @@ public class Building {
     private String openingHours;
     private String address;
     private String mapVersion;
-    private String dimension;
+    private String mapSize;
 
-    public Building(int id, String uuid, int major, String name, String description, String openingHours, String address, String mapVersion, String dimension) {
+    public Building(int id, String uuid, int major, String name, String description, String openingHours, String address, String mapVersion, String mapSize) {
         this.id = id;
         this.uuid = uuid;
         this.major = major;
@@ -25,12 +23,16 @@ public class Building {
         this.openingHours = openingHours;
         this.address = address;
         this.mapVersion = mapVersion;
-        this.dimension = dimension;
+        this.mapSize = mapSize;
     }
 
 
     public int getId() {
         return id;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public String getUuid() {
@@ -58,6 +60,6 @@ public class Building {
     }
 
     public String getDimension() {
-        return dimension;
+        return mapSize;
     }
 }
