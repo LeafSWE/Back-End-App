@@ -59,7 +59,7 @@ public class Building {
         return mapVersion;
     }
 
-    public String getDimension() {
+    public String getMapSize() {
         return mapSize;
     }
 }
