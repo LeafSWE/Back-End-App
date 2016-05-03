@@ -21,7 +21,7 @@ public class Application {
         try {
             if(conn==null) {
                 conn =
-                        DriverManager.getConnection("jdbc:postgresql://52.49.217.118/leaf_database?" +
+                        DriverManager.getConnection("jdbc:postgresql://localhost/leaf_database?" +
                                 "user=leafs&password=Th1si5L3afs!pWd");
             }
         } catch (SQLException ex) {
