@@ -5,18 +5,18 @@ package hello;
  */
 public class EdgeType {
     private int id;
-    private String description;
+    private String typeName;
 
-    public EdgeType(int id, String description) {
+    public EdgeType(int id, String typeName) {
         this.id = id;
-        this.description = description;
+        this.typeName = typeName;
     }
 
     public int getId() {
         return id;
     }
 
-    public String getDescription() {
-        return description;
+    public String getTypeName() {
+        return typeName;
     }
 }
