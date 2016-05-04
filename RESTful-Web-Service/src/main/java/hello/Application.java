@@ -23,6 +23,7 @@ public class Application {
                 conn =
                         DriverManager.getConnection("jdbc:postgresql://localhost/leaf_database?" +
                                 "user=leafs&password=Th1si5L3afs!pWd");
+
             }
         } catch (SQLException ex) {
             // handle any errors
