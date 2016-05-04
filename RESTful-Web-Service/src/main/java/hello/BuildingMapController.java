@@ -15,11 +15,58 @@ import static hello.Application.query;
  */
 @RestController
 public class BuildingMapController {
+    class MapVersion {
+        private String mapVersion;
+
+        public MapVersion(String mapVersion) {
+            this.mapVersion = mapVersion;
+        }
+
+        public String getMapVersion() {
+            return mapVersion;
+        }
+    }
 
     @RequestMapping("/maps")
     public BuildingMap buildingmap(@RequestParam(value="major", defaultValue="1") int major) {
         return new BuildingMap(getBuilding(major),getRois(major),getCategories(major),
                 getPois(major),getRoipois(major),getEdgeTypes(major),getEdges(major),getPhoto(major));
+    }
+
+    @RequestMapping("/allMaps")
+    public  AllBuilding allMaps() {
+        return getAllBuilding();
+    }
+
+    @RequestMapping("/mapVersion")
+    public MapVersion mapVersion(@RequestParam(value="major", defaultValue="1") int major) {
+        return new MapVersion(getBuilding(major).getMapVersion());
+    }
+
+
+    public AllBuilding getAllBuilding(){
+        String q = "SELECT * FROM \"Building\"" ;
+        Building building = null;
+        Vector<Building> buildings = new Vector<Building>();
+        ResultSet rs = query(q);
+        try {
+            while (rs.next()){
+                building = new Building(rs.getInt("id"),
+                        rs.getString("uuid"),
+                        rs.getInt("major"),
+                        rs.getString("name"),
+                        rs.getString("description"),
+                        rs.getString("openingHours"),
+                        rs.getString("address"),
+                        rs.getString("mapVersion"),
+                        rs.getString("mapSize")
+                );
+                buildings.add(building);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return new AllBuilding(buildings);
     }
 
     public Building getBuilding(int major){
