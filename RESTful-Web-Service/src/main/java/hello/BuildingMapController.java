@@ -40,7 +40,10 @@ public class BuildingMapController {
 
     @RequestMapping("/mapVersion")
     public MapVersion mapVersion(@RequestParam(value="major", defaultValue="1") int major) {
-        return new MapVersion(getBuilding(major).getMapVersion());
+        if(!(getBuilding(major).getMapVersion().equals("")))
+            return new MapVersion(getBuilding(major).getMapVersion());
+        else
+            return new MapVersion("-1");
     }
 
 
