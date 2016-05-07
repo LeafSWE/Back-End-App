@@ -20,8 +20,7 @@ public class Application {
     public static Connection connect(){
         try {
             if(conn==null) {
-                conn =
-                        DriverManager.getConnection("jdbc:postgresql://localhost/leaf_database?" +
+                conn = DriverManager.getConnection("jdbc:postgresql://localhost/leaf_database?" +
                                 "user=leafs&password=Th1si5L3afs!pWd");
 
             }
