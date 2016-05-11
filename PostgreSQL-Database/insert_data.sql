@@ -124,20 +124,30 @@ INSERT INTO "Edge" VALUES
 	(15, 7, 3, 1, '40', 2, 'Scendi 1 piano con l''ascensore', 'longDesc'),
 
 -- Dalle scale al corridoio
-	(16, 8, 4,0, '10', 0, 'Apri la porta di fronte a te e svolta a destra', 'longDesc'),
-	(17, 4, 8,0, '120', 0, 'Oltrepassa la prima porta di fronte a te, svolta a sinistra ed oltrepassa la seconda porta', 'longDesc'),
+	(16, 8, 4, 0, '10', 0, 'Apri la porta di fronte a te e svolta a destra', 'longDesc'),
+	(17, 4, 8, 0, '120', 0, 'Oltrepassa la prima porta di fronte a te, svolta a sinistra ed oltrepassa la seconda porta', 'longDesc'),
 	(18, 9, 5, 0, '70', 0, 'Apri la porta di fronte a te e svolta a sinistra', 'longDesc'),
-	(19, 5, 9,0, '230', 0, 'Oltrepassa la prima porta di fronte a te, svolta a destra ed oltrepassa la seconda porta', 'longDesc'),
-	(20, 10, 6,0, '170', 0, 'Apri la porta di fronte a te e svolta a destra', 'longDesc'),
-	(21, 6, 10,0, '300', 0, 'Oltrepassa la prima porta di fronte a te, svolta a sinistra ed oltrepassa la seconda porta', 'longDesc'),
-	(22, 11, 7,0, '220', 0, 'Apri la porta di fronte a te e svolta a sinistra', 'longDesc'),
-	(23, 7, 11,0, '80', 0, 'Oltrepassa la prima porta di fronte a te, svolta a destra ed oltrepassa la seconda porta', 'longDesc'),
+	(19, 5, 9, 0, '230', 0, 'Oltrepassa la prima porta di fronte a te, svolta a destra ed oltrepassa la seconda porta', 'longDesc'),
+	(20, 10, 6, 0, '170', 0, 'Apri la porta di fronte a te e svolta a destra', 'longDesc'),
+	(21, 6, 10, 0, '300', 0, 'Oltrepassa la prima porta di fronte a te, svolta a sinistra ed oltrepassa la seconda porta', 'longDesc'),
+	(22, 11, 7, 0, '220', 0, 'Apri la porta di fronte a te e svolta a sinistra', 'longDesc'),
+	(23, 7, 11, 0, '80', 0, 'Oltrepassa la prima porta di fronte a te, svolta a destra ed oltrepassa la seconda porta', 'longDesc'),
 
 -- Corridoi
-	(24, 4, 7,0, '340', 0, 'Percorri il corridoio', 'longDesc'),
-	(25, 7, 4,0, '220', 0, 'Percorri il corridoio', 'longDesc'),
-	(26, 5, 6,0, '30', 0, 'Percorri il corridoio', 'longDesc'),
-	(27, 6, 5,0, '170', 0, 'Percorri il corridoio', 'longDesc');
+	(24, 4, 7, 0, '340', 0, 'Percorri il corridoio', 'longDesc'),
+	(25, 7, 4, 0, '220', 0, 'Percorri il corridoio', 'longDesc'),
+	(26, 5, 6, 0, '30', 0, 'Percorri il corridoio', 'longDesc'),
+	(27, 6, 5, 0, '170', 0, 'Percorri il corridoio', 'longDesc'),
+
+-- Collegamenti tra le entrate
+	(28, 0, 1, 5, '', 0, 'Raggiungi l''entrata della torre B', 'longDesc'),
+	(29, 1, 0, 5, '', 0, 'Raggiungi l''entrata della torre A', 'longDesc'),
+	(30, 1, 2, 5, '', 0, 'Raggiungi l''entrata della torre C', 'longDesc'),
+	(31, 2, 1, 5, '', 0, 'Raggiungi l''entrata della torre B', 'longDesc'), 
+	(32, 2, 3, 5, '', 0, 'Raggiungi l''entrata della torre D', 'longDesc'), 
+	(33, 3, 2, 5, '', 0, 'Raggiungi l''entrata della torre C', 'longDesc'), 
+	(34, 0, 3, 5, '', 0, 'Raggiungi l''entrata della torre D', 'longDesc'), 
+	(35, 3, 0, 5, '', 0, 'Raggiungi l''entrata della torre A', 'longDesc');
 
 -- Photo
 	INSERT INTO "Photo" VALUES 
