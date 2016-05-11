@@ -1,8 +1,17 @@
+-- COSA MANCA:
+--
+-- 1. AGGIORNARE DIMENSIONE MAPPA
+-- 2. AGGIORNARE LE LONGDESC
+
+
+
+
+
 -- UUID: f7826da6-4fa2-4e98-8024-bc5b71e0893e
 
 -- Building 
 	INSERT INTO "Building" VALUES (0, 'f7826da6-4fa2-4e98-8024-bc5b71e0893e', 666, 'Torre Archimede', 'Edificio in cui è situato il Dipartimento di Matematica.', '07.30 - 19.00. Dal lunedì al venerdì.', 'Via Trieste 63 - 35121 Padova', '1', '2 KB');
-	-- AGGIORNARE DIMENSIONE MAPPA!
+	
 -- ROI
 	-- Beacon entrate piano terra
 	INSERT INTO "ROI" VALUES (0, 'f7826da6-4fa2-4e98-8024-bc5b71e0893e', 666, 00000),
