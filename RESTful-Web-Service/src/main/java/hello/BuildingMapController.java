@@ -113,7 +113,7 @@ public class BuildingMapController {
     }
 
     public Vector<Category> getCategories(int major){
-        String q = "SELECT \"Category\".* FROM ((\"Category\" JOIN \"POI\" ON \"POI\".\"categoryId\"=\"Category\".\"id\") " +
+        String q = "SELECT DISTINCT \"Category\".* FROM ((\"Category\" JOIN \"POI\" ON \"POI\".\"categoryId\"=\"Category\".\"id\") " +
                 "JOIN \"ROIPOI\" ON \"ROIPOI\".\"POIId\"=\"POI\".\"id\") JOIN \"ROI\" ON \"ROIPOI\".\"ROIId\"=\"ROI\".\"id\" " +
                 "WHERE \"ROI\".\"major\"=" + major ;
         Vector<Category> categories = new Vector();
@@ -131,7 +131,7 @@ public class BuildingMapController {
     }
 
     public  Vector<POI> getPois(int major){
-        String q = "SELECT \"POI\".* FROM (\"POI\" JOIN \"ROIPOI\" ON \"ROIPOI\".\"POIId\"=\"POI\".\"id\") " +
+        String q = "SELECT DISTINCT \"POI\".* FROM (\"POI\" JOIN \"ROIPOI\" ON \"ROIPOI\".\"POIId\"=\"POI\".\"id\") " +
                 "JOIN \"ROI\" ON \"ROIPOI\".\"ROIId\"=\"ROI\".\"id\" " +
                 "WHERE \"ROI\".\"major\"=" + major ;
         Vector<POI> pois = new Vector();
