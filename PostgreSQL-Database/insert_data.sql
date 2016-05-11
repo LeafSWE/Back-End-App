@@ -25,12 +25,12 @@
 -- Category
 	INSERT INTO "Category" VALUES (0, 'Aule'),
 	(1, 'Toilette'),
-	(2, 'Entrate'),
-	(3, 'Uffici'),
-	(4, 'Zone relax'),
-	(5, 'Aule studio'),
-	(6, 'Biblioteche'),
-	(7, 'Laboratori');
+	(2, 'Entrate');
+	-- (3, 'Uffici'),
+	-- (4, 'Zone relax'),
+	-- (5, 'Aule studio'),
+	-- (6, 'Biblioteche'),
+	-- (7, 'Laboratori');
 	
 -- POI
 	INSERT INTO "POI" VALUES (0, '1A150', 'Posti disponibili: 150.', 0),
