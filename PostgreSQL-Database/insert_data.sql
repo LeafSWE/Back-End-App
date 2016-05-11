@@ -1,17 +1,14 @@
 -- COSA MANCA:
 --
--- 1. AGGIORNARE DIMENSIONE MAPPA
--- 2. AGGIORNARE LE LONGDESC
--- 3. SCATTARE FOTO DEGLI EDGE TRA ENTRATE
-
-
+-- 1. AGGIORNARE LE LONGDESC
+-- 2. AGGIORNARE DIMENSIONE MAPPA
 
 
 
 -- UUID: f7826da6-4fa2-4e98-8024-bc5b71e0893e
 
 -- Building 
-	INSERT INTO "Building" VALUES (0, 'f7826da6-4fa2-4e98-8024-bc5b71e0893e', 666, 'Torre Archimede', 'Edificio in cui è situato il Dipartimento di Matematica.', '07.30 - 19.00. Dal lunedì al venerdì.', 'Via Trieste 63 - 35121 Padova', '1', '2 KB');
+	INSERT INTO "Building" VALUES (0, 'f7826da6-4fa2-4e98-8024-bc5b71e0893e', 666, 'Torre Archimede', 'Edificio in cui è situato il Dipartimento di Matematica.', '07.30 - 19.00. Dal lunedì al venerdì.', 'Via Trieste 63 - 35121 Padova', '1', '16 KB');
 	
 -- ROI
 	-- Beacon entrate piano terra
@@ -203,14 +200,14 @@ INSERT INTO "Edge" VALUES
 	(48, 'http://bucketclips01.s3.amazonaws.com/images/172229.jpg', 26), -- 172229
 	(49, 'http://bucketclips01.s3.amazonaws.com/images/172340.jpg', 26), -- 172340
 	(50, 'http://bucketclips01.s3.amazonaws.com/images/172431.jpg', 27), -- 172431
-	(51, 'http://bucketclips01.s3.amazonaws.com/images/172451.jpg', 27); -- 172451
-	(52, 'http://bucketclips01.s3.amazonaws.com/images/.jpg', 28) -- SCATTARE LE FOTO!
-	(53, 'http://bucketclips01.s3.amazonaws.com/images/.jpg', 29) -- SCATTARE LE FOTO!
-	(54, 'http://bucketclips01.s3.amazonaws.com/images/.jpg', 30) -- SCATTARE LE FOTO!
-	(55, 'http://bucketclips01.s3.amazonaws.com/images/.jpg', 31) -- SCATTARE LE FOTO!
-	(56, 'http://bucketclips01.s3.amazonaws.com/images/.jpg', 32) -- SCATTARE LE FOTO!
-	(57, 'http://bucketclips01.s3.amazonaws.com/images/.jpg', 33) -- SCATTARE LE FOTO!
-	(58, 'http://bucketclips01.s3.amazonaws.com/images/.jpg', 34) -- SCATTARE LE FOTO!
-	(59, 'http://bucketclips01.s3.amazonaws.com/images/.jpg', 35) -- SCATTARE LE FOTO!
+	(51, 'http://bucketclips01.s3.amazonaws.com/images/172451.jpg', 27), -- 172451
+	(52, 'http://bucketclips01.s3.amazonaws.com/images/171332.jpg', 28), -- 171332
+	(53, 'http://bucketclips01.s3.amazonaws.com/images/171414.jpg', 29), -- 171414
+	(54, 'http://bucketclips01.s3.amazonaws.com/images/171452.jpg', 30), -- 171452
+	(55, 'http://bucketclips01.s3.amazonaws.com/images/171524.jpg', 31), -- 171524
+	(56, 'http://bucketclips01.s3.amazonaws.com/images/171602.jpg', 32), -- 171602
+	(57, 'http://bucketclips01.s3.amazonaws.com/images/171637.jpg', 33), -- 171637
+	(58, 'http://bucketclips01.s3.amazonaws.com/images/171741.jpg', 34), -- 171741
+	(59, 'http://bucketclips01.s3.amazonaws.com/images/171820.jpg', 35); -- 171820
 
 
