@@ -131,7 +131,7 @@ public class BuildingMapController {
     }
 
     public  Vector<POI> getPois(int major){
-        String q = "SELECT \"POI\".* FROM (\"POI\" JOIN \"ROIPOI\" ON \"ROIPOI\".\"POIId\"=\"POI\".\"id\") " +
+        String q = "SELECT DISTINCT \"POI\".* FROM (\"POI\" JOIN \"ROIPOI\" ON \"ROIPOI\".\"POIId\"=\"POI\".\"id\") " +
                 "JOIN \"ROI\" ON \"ROIPOI\".\"ROIId\"=\"ROI\".\"id\" " +
                 "WHERE \"ROI\".\"major\"=" + major ;
         Vector<POI> pois = new Vector();
