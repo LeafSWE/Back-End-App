@@ -2,6 +2,7 @@
 --
 -- 1. AGGIORNARE DIMENSIONE MAPPA
 -- 2. AGGIORNARE LE LONGDESC
+-- 3. SCATTARE FOTO DEGLI EDGE TRA ENTRATE
 
 
 
@@ -203,5 +204,13 @@ INSERT INTO "Edge" VALUES
 	(49, 'http://bucketclips01.s3.amazonaws.com/images/172340.jpg', 26), -- 172340
 	(50, 'http://bucketclips01.s3.amazonaws.com/images/172431.jpg', 27), -- 172431
 	(51, 'http://bucketclips01.s3.amazonaws.com/images/172451.jpg', 27); -- 172451
+	(52, 'http://bucketclips01.s3.amazonaws.com/images/.jpg', 28) -- SCATTARE LE FOTO!
+	(53, 'http://bucketclips01.s3.amazonaws.com/images/.jpg', 29) -- SCATTARE LE FOTO!
+	(54, 'http://bucketclips01.s3.amazonaws.com/images/.jpg', 30) -- SCATTARE LE FOTO!
+	(55, 'http://bucketclips01.s3.amazonaws.com/images/.jpg', 31) -- SCATTARE LE FOTO!
+	(56, 'http://bucketclips01.s3.amazonaws.com/images/.jpg', 32) -- SCATTARE LE FOTO!
+	(57, 'http://bucketclips01.s3.amazonaws.com/images/.jpg', 33) -- SCATTARE LE FOTO!
+	(58, 'http://bucketclips01.s3.amazonaws.com/images/.jpg', 34) -- SCATTARE LE FOTO!
+	(59, 'http://bucketclips01.s3.amazonaws.com/images/.jpg', 35) -- SCATTARE LE FOTO!
 
 
