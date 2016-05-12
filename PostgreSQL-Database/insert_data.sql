@@ -138,14 +138,14 @@ INSERT INTO "Edge" VALUES
 	(27, 6, 5, 0, '170', 0, 'Percorri il corridoio', 'longDesc'),
 
 -- Collegamenti tra le entrate
-	(28, 0, 1, 5, '', 0, 'Raggiungi l''entrata della torre B', 'longDesc'),
-	(29, 1, 0, 5, '', 0, 'Raggiungi l''entrata della torre A', 'longDesc'),
-	(30, 1, 2, 5, '', 0, 'Raggiungi l''entrata della torre C', 'longDesc'),
-	(31, 2, 1, 5, '', 0, 'Raggiungi l''entrata della torre B', 'longDesc'), 
-	(32, 2, 3, 5, '', 0, 'Raggiungi l''entrata della torre D', 'longDesc'), 
-	(33, 3, 2, 5, '', 0, 'Raggiungi l''entrata della torre C', 'longDesc'), 
-	(34, 0, 3, 5, '', 0, 'Raggiungi l''entrata della torre D', 'longDesc'), 
-	(35, 3, 0, 5, '', 0, 'Raggiungi l''entrata della torre A', 'longDesc');
+	(28, 0, 1, 5, '280', 0, 'Raggiungi l''entrata della torre B', 'longDesc'),
+	(29, 1, 0, 5, '125', 0, 'Raggiungi l''entrata della torre A', 'longDesc'),
+	(30, 1, 2, 5, '60', 0, 'Raggiungi l''entrata della torre C', 'longDesc'),
+	(31, 2, 1, 5, '220', 0, 'Raggiungi l''entrata della torre B', 'longDesc'), 
+	(32, 2, 3, 5, '140', 0, 'Raggiungi l''entrata della torre D', 'longDesc'), 
+	(33, 3, 2, 5, '270', 0, 'Raggiungi l''entrata della torre C', 'longDesc'), 
+	(34, 0, 3, 5, '10', 0, 'Raggiungi l''entrata della torre D', 'longDesc'), 
+	(35, 3, 0, 5, '190', 0, 'Raggiungi l''entrata della torre A', 'longDesc');
 
 -- Photo
 	INSERT INTO "Photo" VALUES 
