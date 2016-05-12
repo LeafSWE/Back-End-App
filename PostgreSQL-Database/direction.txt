@@ -1,0 +1,9 @@
+Direction:
+
+0 = dritto
+1 = sinistra
+2 = destra
+3 = sali scale
+4 = scendi scale
+5 = sali ascensore
+6 = scendi ascensore
