@@ -101,51 +101,52 @@ INSERT INTO "EdgeType" VALUES (0, 'default'),
 	-- Edge dal ROI 0 al 8
 INSERT INTO "Edge" VALUES
 -- sensibilità coordinate: +/- 90°
+
 -- Edge dal ROI 8 al 0 (scale - 1° piano)
-	(0, 0, 8, 5, '150', 1, 'Sali 1 piano di scale', 'longDesc'),
-	(1, 8, 0, 5, '105', 1, 'Scendi 1 piano di scale', 'longDesc'),
-	(2, 1, 9, 1, '240', 1, 'Sali 1 piano di scale', 'longDesc'),
-	(3, 9, 1, 1, '285', 1, 'Scendi 1 piano di scale', 'longDesc'),
-	(4, 2, 10, 1, '330', 1, 'Sali 1 piano di scale', 'longDesc'),
-	(5, 10, 2, 1, '285', 1, 'Scendi 1 piano di scale', 'longDesc'),
-	(6, 3, 11, 1, '60', 1, 'Sali 1 piano di scale', 'longDesc'),
-	(7, 11, 3, 1, '105', 1, 'Scendi 1 piano di scale', 'longDesc'),
+	(0, 0, 8, 5, '3', 1, 'Sali 1 piano di scale', 'longDesc'),
+	(1, 8, 0, 5, '4', 1, 'Scendi 1 piano di scale', 'longDesc'),
+	(2, 1, 9, 5, '3', 1, 'Sali 1 piano di scale', 'longDesc'),
+	(3, 9, 1, 5, '4', 1, 'Scendi 1 piano di scale', 'longDesc'),
+	(4, 2, 10, 5, '3', 1, 'Sali 1 piano di scale', 'longDesc'),
+	(5, 10, 2, 5, '4', 1, 'Scendi 1 piano di scale', 'longDesc'),
+	(6, 3, 11, 5, '3', 1, 'Sali 1 piano di scale', 'longDesc'),
+	(7, 11, 3, 5, '4', 1, 'Scendi 1 piano di scale', 'longDesc'),
 
 -- Ascensore piano terra - 1° piano),
-	(8, 0, 4, 1, '195', 2, 'Sali 1 piano con l''ascensore', 'longDesc'),
-	(9, 4, 0, 1, '150', 2, 'Scendi 1 piano con l''ascensore', 'longDesc'),
-	(10, 1, 5, 1, '180', 2, 'Sali 1 piano con l''ascensore', 'longDesc'),
-	(11, 5, 1, 1, '220', 2, 'Scendi 1 piano con l''ascensore', 'longDesc'),
-	(12, 2, 6, 1, '50', 2, 'Sali 1 piano con l''ascensore', 'longDesc'),
-	(13, 6, 2, 1, '310', 2, 'Scendi 1 piano con l''ascensore', 'longDesc'),
-	(14, 3, 7, 1, '355', 2, 'Sali 1 piano con l''ascensore', 'longDesc'),
-	(15, 7, 3, 1, '40', 2, 'Scendi 1 piano con l''ascensore', 'longDesc'),
+	(8, 0, 4, 5, '5', 2, 'Sali 1 piano con l''ascensore', 'longDesc'),
+	(9, 4, 0, 5, '6', 2, 'Scendi 1 piano con l''ascensore', 'longDesc'),
+	(10, 1, 5, 5, '5', 2, 'Sali 1 piano con l''ascensore', 'longDesc'),
+	(11, 5, 1, 5, '6', 2, 'Scendi 1 piano con l''ascensore', 'longDesc'),
+	(12, 2, 6, 5, '5', 2, 'Sali 1 piano con l''ascensore', 'longDesc'),
+	(13, 6, 2, 5, '6', 2, 'Scendi 1 piano con l''ascensore', 'longDesc'),
+	(14, 3, 7, 5, '5', 2, 'Sali 1 piano con l''ascensore', 'longDesc'),
+	(15, 7, 3, 5, '6', 2, 'Scendi 1 piano con l''ascensore', 'longDesc'),
 
 -- Dalle scale al corridoio
-	(16, 8, 4, 0, '10', 0, 'Apri la porta di fronte a te e svolta a destra', 'longDesc'),
-	(17, 4, 8, 0, '120', 0, 'Oltrepassa la prima porta di fronte a te, svolta a sinistra ed oltrepassa la seconda porta', 'longDesc'),
-	(18, 9, 5, 0, '70', 0, 'Apri la porta di fronte a te e svolta a sinistra', 'longDesc'),
-	(19, 5, 9, 0, '230', 0, 'Oltrepassa la prima porta di fronte a te, svolta a destra ed oltrepassa la seconda porta', 'longDesc'),
-	(20, 10, 6, 0, '170', 0, 'Apri la porta di fronte a te e svolta a destra', 'longDesc'),
-	(21, 6, 10, 0, '300', 0, 'Oltrepassa la prima porta di fronte a te, svolta a sinistra ed oltrepassa la seconda porta', 'longDesc'),
-	(22, 11, 7, 0, '220', 0, 'Apri la porta di fronte a te e svolta a sinistra', 'longDesc'),
-	(23, 7, 11, 0, '80', 0, 'Oltrepassa la prima porta di fronte a te, svolta a destra ed oltrepassa la seconda porta', 'longDesc'),
+	(16, 8, 4, 4, '2', 0, 'Apri la porta di fronte a te e svolta a destra', 'longDesc'),
+	(17, 4, 8, 4, '1', 0, 'Oltrepassa la prima porta di fronte a te, svolta a sinistra ed oltrepassa la seconda porta', 'longDesc'),
+	(18, 9, 5, 4, '1', 0, 'Apri la porta di fronte a te e svolta a sinistra', 'longDesc'),
+	(19, 5, 9, 4, '2', 0, 'Oltrepassa la prima porta di fronte a te, svolta a destra ed oltrepassa la seconda porta', 'longDesc'),
+	(20, 10, 6, 4, '2', 0, 'Apri la porta di fronte a te e svolta a destra', 'longDesc'),
+	(21, 6, 10, 4, '1', 0, 'Oltrepassa la prima porta di fronte a te, svolta a sinistra ed oltrepassa la seconda porta', 'longDesc'),
+	(22, 11, 7, 4, '1', 0, 'Apri la porta di fronte a te e svolta a sinistra', 'longDesc'),
+	(23, 7, 11, 4, '2', 0, 'Oltrepassa la prima porta di fronte a te, svolta a destra ed oltrepassa la seconda porta', 'longDesc'),
 
 -- Corridoi
-	(24, 4, 7, 0, '340', 0, 'Percorri il corridoio', 'longDesc'),
-	(25, 7, 4, 0, '220', 0, 'Percorri il corridoio', 'longDesc'),
-	(26, 5, 6, 0, '30', 0, 'Percorri il corridoio', 'longDesc'),
-	(27, 6, 5, 0, '170', 0, 'Percorri il corridoio', 'longDesc'),
+	(24, 4, 7, 20, '0', 0, 'Percorri il corridoio', 'longDesc'),
+	(25, 7, 4, 20, '0', 0, 'Percorri il corridoio', 'longDesc'),
+	(26, 5, 6, 20, '0', 0, 'Percorri il corridoio', 'longDesc'),
+	(27, 6, 5, 20, '0', 0, 'Percorri il corridoio', 'longDesc'),
 
 -- Collegamenti tra le entrate
-	(28, 0, 1, 5, '280', 0, 'Raggiungi l''entrata della torre B', 'longDesc'),
-	(29, 1, 0, 5, '125', 0, 'Raggiungi l''entrata della torre A', 'longDesc'),
-	(30, 1, 2, 5, '60', 0, 'Raggiungi l''entrata della torre C', 'longDesc'),
-	(31, 2, 1, 5, '220', 0, 'Raggiungi l''entrata della torre B', 'longDesc'), 
-	(32, 2, 3, 5, '140', 0, 'Raggiungi l''entrata della torre D', 'longDesc'), 
-	(33, 3, 2, 5, '270', 0, 'Raggiungi l''entrata della torre C', 'longDesc'), 
-	(34, 0, 3, 5, '10', 0, 'Raggiungi l''entrata della torre D', 'longDesc'), 
-	(35, 3, 0, 5, '190', 0, 'Raggiungi l''entrata della torre A', 'longDesc');
+	(28, 0, 1, 20, '0', 0, 'Raggiungi l''entrata della torre B', 'longDesc'),
+	(29, 1, 0, 20, '0', 0, 'Raggiungi l''entrata della torre A', 'longDesc'),
+	(30, 1, 2, 20, '0', 0, 'Raggiungi l''entrata della torre C', 'longDesc'),
+	(31, 2, 1, 20, '0', 0, 'Raggiungi l''entrata della torre B', 'longDesc'), 
+	(32, 2, 3, 20, '0', 0, 'Raggiungi l''entrata della torre D', 'longDesc'), 
+	(33, 3, 2, 20, '0', 0, 'Raggiungi l''entrata della torre C', 'longDesc'), 
+	(34, 0, 3, 20, '0', 0, 'Raggiungi l''entrata della torre D', 'longDesc'), 
+	(35, 3, 0, 20, '0', 0, 'Raggiungi l''entrata della torre A', 'longDesc');
 
 -- Photo
 	INSERT INTO "Photo" VALUES 
