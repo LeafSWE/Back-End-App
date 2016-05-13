@@ -123,14 +123,14 @@ INSERT INTO "Edge" VALUES
 	(15, 7, 3, 1, '6', 2, 'Scendi 1 piano con l''ascensore', 'longDesc'),
 
 -- Dalle scale al corridoio
-	(16, 8, 4, 4, '2', 0, 'Apri la porta di fronte a te e svolta a destra', 'longDesc'),
-	(17, 4, 8, 4, '1', 0, 'Oltrepassa la prima porta di fronte a te, svolta a sinistra ed oltrepassa la seconda porta', 'longDesc'),
-	(18, 9, 5, 4, '1', 0, 'Apri la porta di fronte a te e svolta a sinistra', 'longDesc'),
-	(19, 5, 9, 4, '2', 0, 'Oltrepassa la prima porta di fronte a te, svolta a destra ed oltrepassa la seconda porta', 'longDesc'),
-	(20, 10, 6, 4, '2', 0, 'Apri la porta di fronte a te e svolta a destra', 'longDesc'),
-	(21, 6, 10, 4, '1', 0, 'Oltrepassa la prima porta di fronte a te, svolta a sinistra ed oltrepassa la seconda porta', 'longDesc'),
-	(22, 11, 7, 4, '1', 0, 'Apri la porta di fronte a te e svolta a sinistra', 'longDesc'),
-	(23, 7, 11, 4, '2', 0, 'Oltrepassa la prima porta di fronte a te, svolta a destra ed oltrepassa la seconda porta', 'longDesc'),
+	(16, 8, 4, 1, '2', 0, 'Apri la porta di fronte a te e svolta a destra', 'longDesc'),
+	(17, 4, 8, 1, '1', 0, 'Oltrepassa la prima porta di fronte a te, svolta a sinistra ed oltrepassa la seconda porta', 'longDesc'),
+	(18, 9, 5, 1, '1', 0, 'Apri la porta di fronte a te e svolta a sinistra', 'longDesc'),
+	(19, 5, 9, 1, '2', 0, 'Oltrepassa la prima porta di fronte a te, svolta a destra ed oltrepassa la seconda porta', 'longDesc'),
+	(20, 10, 6, 1, '2', 0, 'Apri la porta di fronte a te e svolta a destra', 'longDesc'),
+	(21, 6, 10, 1, '1', 0, 'Oltrepassa la prima porta di fronte a te, svolta a sinistra ed oltrepassa la seconda porta', 'longDesc'),
+	(22, 11, 7, 1, '1', 0, 'Apri la porta di fronte a te e svolta a sinistra', 'longDesc'),
+	(23, 7, 11, 1, '2', 0, 'Oltrepassa la prima porta di fronte a te, svolta a destra ed oltrepassa la seconda porta', 'longDesc'),
 
 -- Corridoi
 	(24, 4, 7, 20, '0', 0, 'Percorri il corridoio', 'longDesc'),
