@@ -2,13 +2,14 @@
 --
 -- 1. AGGIORNARE LE LONGDESC
 -- 2. AGGIORNARE DIMENSIONE MAPPA
+-- 3. FORMATTARE LONGDESC IN HTML, RENDERLE PIU LEGGIBILI AGGIUNGENDO <p></p>
 
 
 
 -- UUID: f7826da6-4fa2-4e98-8024-bc5b71e0893e
 
 -- Building 
-	INSERT INTO "Building" VALUES (0, 'f7826da6-4fa2-4e98-8024-bc5b71e0893e', 666, 'Torre Archimede', 'Il Dipartimento di Matematica si propone come il riferimento fondamentale dell\'Ateneo per le competenze matematiche e informatiche, sia sul piano della ricerca che in quello della didattica.', '07.30 - 19.00. Dal lunedì al venerdì.', 'Via Trieste 63 - 35121 Padova', '1', '26 KB');
+	INSERT INTO "Building" VALUES (0, 'f7826da6-4fa2-4e98-8024-bc5b71e0893e', 666, 'Torre Archimede', 'Il Dipartimento di Matematica si propone come il riferimento fondamentale dell''Ateneo per le competenze matematiche e informatiche, sia sul piano della ricerca che in quello della didattica.', '07.30 - 19.00. Dal lunedì al venerdì.', 'Via Trieste 63 - 35121 Padova', '1', '26 KB');
 	
 -- ROI
 	-- Beacon entrate piano terra
@@ -103,34 +104,34 @@ INSERT INTO "Edge" VALUES
 -- sensibilità coordinate: +/- 90°
 
 -- Edge dal ROI 8 al 0 (scale - 1° piano)
-	(0, 0, 8, 1, '3', 1, 'Sali 1 piano di scale', 'Sali le scale a chiocciola per un piano. Dovresti superare 4 rampe di scale e trovarti di fronte ad una porta antincendio. Al di sopra di tale porta dovrebbe esserci scritto "PIANO 1 SCALA A".'),
-	(1, 8, 0, 1, '4', 1, 'Scendi 1 piano di scale', 'Scendi le scale a chiocciola per un piano. Dovresti superare 4 rampe di scale e raggiungere il piano terra della Torre Archimede.'),
-	(2, 1, 9, 1, '3', 1, 'Sali 1 piano di scale', 'Sali le scale a chiocciola per un piano. Dovresti superare 4 rampe di scale e trovarti di fronte ad una porta antincendio. Al di sopra di tale porta dovrebbe esserci scritto "PIANO 1 SCALA B".'),
-	(3, 9, 1, 1, '4', 1, 'Scendi 1 piano di scale', 'Scendi le scale a chiocciola per un piano. Dovresti superare 4 rampe di scale e raggiungere il piano terra della Torre Archimede.'),
-	(4, 2, 10, 1, '3', 1, 'Sali 1 piano di scale', 'Sali le scale a chiocciola per un piano. Dovresti superare 4 rampe di scale e trovarti di fronte ad una porta antincendio. Al di sopra di tale porta dovrebbe esserci scritto "PIANO 1 SCALA C".'),
-	(5, 10, 2, 1, '4', 1, 'Scendi 1 piano di scale', 'Scendi le scale a chiocciola per un piano. Dovresti superare 4 rampe di scale e raggiungere il piano terra della Torre Archimede.'),
-	(6, 3, 11, 1, '3', 1, 'Sali 1 piano di scale', 'Sali le scale a chiocciola per un piano. Dovresti superare 4 rampe di scale e trovarti di fronte ad una porta antincendio. Al di sopra di tale porta dovrebbe esserci scritto "PIANO 1 SCALA D".'),
-	(7, 11, 3, 1, '4', 1, 'Scendi 1 piano di scale', 'Scendi le scale a chiocciola per un piano. Dovresti superare 4 rampe di scale e raggiungere il piano terra della Torre Archimede.'),
+	(0, 0, 8, 1, '3', 1, 'Sali 1 piano di scale', 'Sali le scale per un piano. Dovresti superare 4 rampe di scale e trovarti di fronte ad una porta antincendio. Al di sopra di tale porta dovresti vedere la scritta "PIANO 1 SCALA A".'),
+	(1, 8, 0, 1, '4', 1, 'Scendi 1 piano di scale', 'Scendi le scale per un piano. Dovresti superare 4 rampe di scale e raggiungere il piano terra della Torre Archimede.'),
+	(2, 1, 9, 1, '3', 1, 'Sali 1 piano di scale', 'Sali le scale per un piano. Dovresti superare 4 rampe di scale e trovarti di fronte ad una porta antincendio. Al di sopra di tale porta dovresti vedere la scritta "PIANO 1 SCALA B".'),
+	(3, 9, 1, 1, '4', 1, 'Scendi 1 piano di scale', 'Scendi le scale per un piano. Dovresti superare 4 rampe di scale e raggiungere il piano terra della Torre Archimede.'),
+	(4, 2, 10, 1, '3', 1, 'Sali 1 piano di scale', 'Sali le scale per un piano. Dovresti superare 4 rampe di scale e trovarti di fronte ad una porta antincendio. Al di sopra di tale porta dovresti vedere la scritta "PIANO 1 SCALA C".'),
+	(5, 10, 2, 1, '4', 1, 'Scendi 1 piano di scale', 'Scendi le scale per un piano. Dovresti superare 4 rampe di scale e raggiungere il piano terra della Torre Archimede.'),
+	(6, 3, 11, 1, '3', 1, 'Sali 1 piano di scale', 'Sali le scale per un piano. Dovresti superare 4 rampe di scale e trovarti di fronte ad una porta antincendio. Al di sopra di tale porta dovresti vedere la scritta "PIANO 1 SCALA D".'),
+	(7, 11, 3, 1, '4', 1, 'Scendi 1 piano di scale', 'Scendi le scale per un piano. Dovresti superare 4 rampe di scale e raggiungere il piano terra della Torre Archimede.'),
 
 -- Ascensore piano terra - 1° piano),
-	(8, 0, 4, 1, '5', 2, 'Prendi l''ascensore e raggiungi il primo piano', 'Chiama l''ascensore con il bottone raffigurante una freccia che punta verso l''alto. Quando è arrivato entra e schiaccia il bottone per il primo piano (1).'),
-	(9, 4, 0, 1, '6', 2, 'Prendi l''ascensore e raggiungi il piano terra', 'Chiama l''ascensore con il bottone raffigurante una freccia che punta verso il basso. Quando è arrivato entra e schiaccia il bottone per il piano terra (0).'),
-	(10, 1, 5, 1, '5', 2, 'Prendi l''ascensore e raggiungi il primo piano', 'Chiama l''ascensore con il bottone raffigurante una freccia che punta verso l''alto. Quando è arrivato entra e schiaccia il bottone per il primo piano (1).'),
-	(11, 5, 1, 1, '6', 2, 'Prendi l''ascensore e raggiungi il piano terra', 'Chiama l''ascensore con il bottone raffigurante una freccia che punta verso il basso. Quando è arrivato entra e schiaccia il bottone per il piano terra (0).'),
-	(12, 2, 6, 1, '5', 2, 'Prendi l''ascensore e raggiungi il primo piano', 'Chiama l''ascensore con il bottone raffigurante una freccia che punta verso l''alto. Quando è arrivato entra e schiaccia il bottone per il primo piano (1).'),
-	(13, 6, 2, 1, '6', 2, 'Prendi l''ascensore e raggiungi il piano terra', 'Chiama l''ascensore con il bottone raffigurante una freccia che punta verso il basso. Quando è arrivato entra e schiaccia il bottone per il piano terra (0).'),
-	(14, 3, 7, 1, '5', 2, 'Prendi l''ascensore e raggiungi il primo piano', 'Chiama l''ascensore con il bottone raffigurante una freccia che punta verso l''alto. Quando è arrivato entra e schiaccia il bottone per il primo piano (1).'),
-	(15, 7, 3, 1, '6', 2, 'Prendi l''ascensore e raggiungi il piano terra', 'Chiama l''ascensore con il bottone raffigurante una freccia che punta verso il basso. Quando è arrivato entra e schiaccia il bottone per il piano terra (0).'),
+	(8, 0, 4, 1, '5', 2, 'Prendi l''ascensore e raggiungi il primo piano', 'Chiama l''ascensore con il bottone raffigurante una freccia che punta verso l''alto. Quando è arrivato entra e premi il bottone per il primo piano (1).'),
+	(9, 4, 0, 1, '6', 2, 'Prendi l''ascensore e raggiungi il piano terra', 'Chiama l''ascensore con il bottone raffigurante una freccia che punta verso il basso. Quando è arrivato entra e premi il bottone per il piano terra (0).'),
+	(10, 1, 5, 1, '5', 2, 'Prendi l''ascensore e raggiungi il primo piano', 'Chiama l''ascensore con il bottone raffigurante una freccia che punta verso l''alto. Quando è arrivato entra e premi il bottone per il primo piano (1).'),
+	(11, 5, 1, 1, '6', 2, 'Prendi l''ascensore e raggiungi il piano terra', 'Chiama l''ascensore con il bottone raffigurante una freccia che punta verso il basso. Quando è arrivato entra e premi il bottone per il piano terra (0).'),
+	(12, 2, 6, 1, '5', 2, 'Prendi l''ascensore e raggiungi il primo piano', 'Chiama l''ascensore con il bottone raffigurante una freccia che punta verso l''alto. Quando è arrivato entra e premi il bottone per il primo piano (1).'),
+	(13, 6, 2, 1, '6', 2, 'Prendi l''ascensore e raggiungi il piano terra', 'Chiama l''ascensore con il bottone raffigurante una freccia che punta verso il basso. Quando è arrivato entra e premi il bottone per il piano terra (0).'),
+	(14, 3, 7, 1, '5', 2, 'Prendi l''ascensore e raggiungi il primo piano', 'Chiama l''ascensore con il bottone raffigurante una freccia che punta verso l''alto. Quando è arrivato entra e premi il bottone per il primo piano (1).'),
+	(15, 7, 3, 1, '6', 2, 'Prendi l''ascensore e raggiungi il piano terra', 'Chiama l''ascensore con il bottone raffigurante una freccia che punta verso il basso. Quando è arrivato entra e premi il bottone per il piano terra (0).'),
 
 -- Dalle scale al corridoio
 	(16, 8, 4, 1, '2', 0, 'Apri la porta di fronte a te e svolta a destra', 'Entra dalla porta antincendio, gira a destra lasciandoti alle spalle l''ascensore e oltrepassa una seconda porta antincendio.'),
-	(17, 4, 8, 1, '1', 0, 'Oltrepassa la prima porta di fronte a te, svolta a sinistra ed oltrepassa la seconda porta', 'Entra dalla porta antincendio, gira a sinistra lasciandoti a destra l''ascensore e oltrepassa una seconda porta antincendio.'),
+	(17, 4, 8, 1, '1', 0, 'Oltrepassa la porta antincendio più vicina, svolta a sinistra ed oltrepassa la seconda porta', 'Entra dalla porta antincendio, gira a sinistra lasciandoti a destra l''ascensore e oltrepassa una seconda porta antincendio.'),
 	(18, 9, 5, 1, '1', 0, 'Apri la porta di fronte a te e svolta a sinistra', 'Entra dalla porta antincendio, gira a sinistra lasciandoti alle spalle l''ascensore e oltrepassa una seconda porta antincendio.'),
-	(19, 5, 9, 1, '2', 0, 'Oltrepassa la prima porta di fronte a te, svolta a destra ed oltrepassa la seconda porta', 'Entra dalla porta antincendio, gira a destra lasciandoti a sinistra l''ascensore e oltrepassa una seconda porta antincendio.'),
+	(19, 5, 9, 1, '2', 0, 'Oltrepassa la porta antincendio più vicina, svolta a destra ed oltrepassa la seconda porta', 'Entra dalla porta antincendio, gira a destra lasciandoti a sinistra l''ascensore e oltrepassa una seconda porta antincendio.'),
 	(20, 10, 6, 1, '2', 0, 'Apri la porta di fronte a te e svolta a destra', 'Entra dalla porta antincendio, gira a destra lasciandoti alle spalle l''ascensore e oltrepassa una seconda porta antincendio.'),
-	(21, 6, 10, 1, '1', 0, 'Oltrepassa la prima porta di fronte a te, svolta a sinistra ed oltrepassa la seconda porta', 'Entra dalla porta antincendio, gira a sinistra lasciandoti a destra l''ascensore e oltrepassa una seconda porta antincendio.'),
+	(21, 6, 10, 1, '1', 0, 'Oltrepassa la porta antincendio più vicina, svolta a sinistra ed oltrepassa la seconda porta', 'Entra dalla porta antincendio, gira a sinistra lasciandoti a destra l''ascensore e oltrepassa una seconda porta antincendio.'),
 	(22, 11, 7, 1, '1', 0, 'Apri la porta di fronte a te e svolta a sinistra', 'Entra dalla porta antincendio, gira a destra lasciandoti a sinistra l''ascensore e oltrepassa una seconda porta antincendio.'),
-	(23, 7, 11, 1, '2', 0, 'Oltrepassa la prima porta di fronte a te, svolta a destra ed oltrepassa la seconda porta', 'Entra dalla porta antincendio, gira a sinistra lasciandoti alle spalle l''ascensore e oltrepassa una seconda porta antincendio.'),
+	(23, 7, 11, 1, '2', 0, 'Oltrepassa la porta antincendio più vicina, svolta a destra ed oltrepassa la seconda porta', 'Entra dalla porta antincendio, gira a destra lasciandoti alle spalle l''ascensore e oltrepassa una seconda porta antincendio.'),
 
 -- Corridoi
 	(24, 4, 7, 20, '0', 0, 'Raggiungi la porta antincendio in fondo al corridoio', 'Raggiungi la porta antincendio in fondo al corridoio. Percorrendo il corridoio dovresti vedere alla tua sinistra in successione l''aula 1A150, poi delle finestre ed infine l''aula 1C150. Alla tua destra invece dovresti vedere la toilette delle donne di fronte all''aula 1A150, successivamente l''aula 1AD100 (che ha 3 ingressi) ed infine la toilette degli uomini di fronte l''aula 1C150.'),
